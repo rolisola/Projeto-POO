@@ -1,0 +1,103 @@
+@startuml
+
+package modelo {
+    class Midia {
+        - String nome
+        - String artista
+        - float preco
+        - int codBarras
+        + midia()
+        + void setNome(String nome)
+        + String getNome()
+        + void setArtista(String artista)
+        + String getArtista()
+        + void setPreco(float preco)
+        + float getPreco()
+        + void setCodBarras(int codBattaras)
+        + int getCodBarras()
+    }
+
+    class Cd {
+        - int numFaixas
+        + cd()
+        + cd(...)
+        + void setNumFaixas(int numFaixas)
+        + int getNumFaixas()
+    }
+
+    class Dvd {
+        - float tempoDuracao
+        + dvd()
+        + dvd(...)
+        + void setTempoDuracao(float tempoDuracao)
+        + float getTempoDuracao()
+    }
+
+    class Cantor {
+        - String nome
+        - int tempoCarreira
+        + cantor()
+        + cantor(...)
+        + void setNome(String nome)
+        + String getNome()
+        + void setTempoCarreira(int tempoCarreira)
+        + int getTempoCarreira()
+    }
+
+    class Banda {
+        - String nome
+        - int numIntegrantes
+        + banda()
+        + banda(...)
+        + void setNome(String nome)
+        + String getNome()
+        + void setNumIntegrantes(int numIntegrantes)
+        + int getNumIntegrantes()
+    }
+
+    Midia <|-down- Cd
+    Midia <|-down- Dvd
+    Cantor "1" <-right-> "1...*" Midia : grava >
+    Banda "1" <-left-> "1...*" Midia : grava >
+}
+
+
+package repositorio {
+    class CatalogoBanda {
+        - List<Banda> catalogoBanda
+        + catalogoBanda()
+        + void cadastrar(Banda banda)
+        + Banda consultar(Banda banda)
+        + void excluir(Banda banda)
+        + List<Banda> listarBanda()
+    }
+
+    class CatalogoMidia {
+        - List<Cd> catalogoCd
+        - List<Dvd> catalogoDvd
+        + catalogoMidia()
+        + void cadastrar(Cd cd)
+        + void cadastrar(Dvd dvd)
+        + Cd consultar(Cd cd)
+        + Dvd consultar(Dvd dvd)
+        + void excluir(Cd cd)
+        + void excluir(Dvd dvd)
+        + List<Cd> listarCd()
+        + List<Dvd> listarDvd()
+    }
+
+    class CatalogoCantor {
+        - List<Cantor> catalogoCantor
+        + catalogoCantor()
+        + void cadastrar(Cantor cantor)
+        + Cantor consultar(Cantor cantor)
+        + Cantor excluir(Cantor cantor)
+        + List<Cantor> listarCantor()
+    }
+
+    CatalogoMidia "1" o-down-> "0...*" Midia : possui >    
+    CatalogoCantor "1" o-down-> "0...*" Cantor : possui >
+    CatalogoBanda "1" o-down-> "0...*" Banda : possui >
+}
+
+@enduml
