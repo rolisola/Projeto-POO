@@ -10,7 +10,7 @@
 ---
 
 ## Integrantes
-* [Fauzi Asbahr]()
+* [Fauzi Asbahr](github.com/FAsbahr20)
 * [João Victor Gomes De Oliveira](github.com/joaovictorgo99)
 * [Vitor Marchini Rolisola](github.com/rolisola)
 
