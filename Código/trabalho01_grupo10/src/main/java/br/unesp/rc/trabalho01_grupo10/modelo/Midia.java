@@ -54,6 +54,4 @@ public class Midia {
     public String toString() {
         return "nome=" + nome + ", preco=" + preco;
     }
-    
-    
 }

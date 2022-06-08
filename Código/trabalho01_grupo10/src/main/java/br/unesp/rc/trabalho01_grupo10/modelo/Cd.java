@@ -25,8 +25,6 @@ public class Cd extends Midia {
     public String toString() {
         return "Cd{" + super.toString() + ", numFaixas=" + numFaixas + '}';
     }
-    
-    
 }
 
 
