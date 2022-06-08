@@ -1,4 +1,4 @@
-package br.unesp.rc.trabalho01_grupo10.menu;
+package br.unesp.rc.trabalho01_grupo10;
 import br.unesp.rc.trabalho01_grupo10.repositorio.CatalogoCantor;
 import br.unesp.rc.trabalho01_grupo10.repositorio.CatalogoBanda;
 import br.unesp.rc.trabalho01_grupo10.repositorio.CatalogoMidia;
@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @authors Fauzi Asbahr, João Victor Gomes de Oliveira e Vitor Marchini Rolisola
  */
 
-public class Menu {
+public class Trabalho01_grupo10 {
 
     public static void main(String[] args) {
         

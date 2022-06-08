@@ -1,6 +1,6 @@
 package br.unesp.rc.trabalho01_grupo10.repositorio;
 
-import br.unesp.rc.trabalho01_grupo10.Banda;
+import br.unesp.rc.trabalho01_grupo10.modelo.Banda;
 import java.util.List;
 
 /**

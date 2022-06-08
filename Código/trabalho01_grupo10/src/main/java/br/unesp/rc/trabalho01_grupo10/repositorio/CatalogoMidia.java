@@ -1,6 +1,6 @@
 package br.unesp.rc.trabalho01_grupo10.repositorio;
 
-import br.unesp.rc.trabalho01_grupo10.Midia;
+import br.unesp.rc.trabalho01_grupo10.modelo.Midia;
 import java.util.List;
 
 /**

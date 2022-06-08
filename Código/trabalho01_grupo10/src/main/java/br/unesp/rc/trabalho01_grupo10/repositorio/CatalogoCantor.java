@@ -1,6 +1,6 @@
 package br.unesp.rc.trabalho01_grupo10.repositorio;
 
-import br.unesp.rc.trabalho01_grupo10.Cantor;
+import br.unesp.rc.trabalho01_grupo10.modelo.Cantor;
 import java.util.List;
 
 /**
@@ -17,12 +17,4 @@ public class CatalogoCantor {
     void Cadastrar(Cantor cantor){
         catalogoCantor.add(cantor);
     }
-    
-    List<Cantor> listaCantor(){
-        
-    
-    }
-    
-    
-    
 }
