@@ -1,0 +1,133 @@
+-------------------< br.unesp.rc:trabalho01_grupo10 >-------------------
+Building trabalho01_grupo10 1.0-SNAPSHOT
+--------------------------------[ jar ]---------------------------------
+
+--- exec-maven-plugin:3.0.0:exec (default-cli) @ trabalho01_grupo10 ---
+==========================
+=== Catálogo de Mídias ===
+==========================
+
+1 - Cadastrar
+2 - Consultar
+3 - Consultar Posição
+4 - Excluir
+5 - Listar todos
+6 - Sair
+Opção: 
+1
+=== Cadastrando... ===
+Cantor "Beltrano" já existente!
+Banda "Fulana e suas amigas" já existente!
+Cd "Cd do Fulano" já existente!
+Dvd "Dvd do Beltrano" já existente!
+=== Cadastros realizados! ===
+==========================
+=== Catálogo de Mídias ===
+==========================
+
+1 - Cadastrar
+2 - Consultar
+3 - Consultar Posição
+4 - Excluir
+5 - Listar todos
+6 - Sair
+Opção: 
+2
+=== Consultando... ===
+Cantor{nome=Fulana, tempoCarreira=4}
+Banda{nome=Beltrano e seus amigos, numIntegrantes=7}
+Cd{nome=Cd da Fulana, preco=15.0, numFaixas=18}
+Dvd{nome=Dvd do Beltrano, preco=30.0numDuracao=39}
+=== Consultas realizadas! ===
+==========================
+=== Catálogo de Mídias ===
+==========================
+
+1 - Cadastrar
+2 - Consultar
+3 - Consultar Posição
+4 - Excluir
+5 - Listar todos
+6 - Sair
+Opção: 
+3
+=== Consultando Posição... ===
+Nome: Cd da Fulana
+Posição: 2
+Nome: Cd do Ciclano e seus amigos
+Posição: 3
+Nome: Dvd do Beltrano
+Posição: 1
+Nome: Dvd da Fulana e suas amigas
+Posição: 2
+=== Consultas realizadas! ===
+==========================
+=== Catálogo de Mídias ===
+==========================
+
+1 - Cadastrar
+2 - Consultar
+3 - Consultar Posição
+4 - Excluir
+5 - Listar todos
+6 - Sair
+Opção: 
+4
+=== Excluindo... ===
+Cantor "Fulana" excluído!
+Cantor "Beltrano e seus amigos" excluído!
+Cd "Cd da Fulana" excluído!
+Dvd "Dvd do Beltrano" excluído!
+=== Exclusões realizadas! ===
+==========================
+=== Catálogo de Mídias ===
+==========================
+
+1 - Cadastrar
+2 - Consultar
+3 - Consultar Posição
+4 - Excluir
+5 - Listar todos
+6 - Sair
+Opção: 
+5
+=== Listando... ===
+
+	Cantores
+Cantor{nome=Fulano, tempoCarreira=2}
+Cantor{nome=Ciclano, tempoCarreira=3}
+Cantor{nome=Beltrano, tempoCarreira=4}
+
+	Bandas
+Banda{nome=Fulano e seus amigos, numIntegrantes=4}
+Banda{nome=Ciclano e seus amigos, numIntegrantes=5}
+Banda{nome=Fulana e suas amigas, numIntegrantes=10}
+
+	CDs
+Cd{nome=Cd do Fulano, preco=10.0, numFaixas=13}
+Cd{nome=Cd do Ciclano e seus amigos, preco=8.0, numFaixas=9}
+
+	DVDs
+Dvd{nome=Dvd da Fulana e suas amigas, preco=35.0numDuracao=54}
+Dvd{nome=Dvd do Ciclano, preco=28.0numDuracao=27}
+=== Listagem realizada! ===
+==========================
+=== Catálogo de Mídias ===
+==========================
+
+1 - Cadastrar
+2 - Consultar
+3 - Consultar Posição
+4 - Excluir
+5 - Listar todos
+6 - Sair
+Opção: 
+6
+
+Obrigado e até logo!!!
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  30.004 s
+Finished at: 2022-06-08T19:56:23-03:00
+------------------------------------------------------------------------
