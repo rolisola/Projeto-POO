@@ -3,6 +3,7 @@ Building trabalho01_grupo10 1.0-SNAPSHOT
 --------------------------------[ jar ]---------------------------------
 
 --- exec-maven-plugin:3.0.0:exec (default-cli) @ trabalho01_grupo10 ---
+
 ==========================
 === Catálogo de Mídias ===
 ==========================
@@ -16,11 +17,12 @@ Building trabalho01_grupo10 1.0-SNAPSHOT
 Opção: 
 1
 === Cadastrando... ===
-Cantor "Beltrano" já existente!
-Banda "Fulana e suas amigas" já existente!
-Cd "Cd do Fulano" já existente!
-Dvd "Dvd do Beltrano" já existente!
+Artista "Beltrano" já existe!
+Banda "Fulana e suas amigas" já existe!
+Mídia "Cd do Beltrano" já existe!
+Mídia "Dvd do Beltrano" já existe!
 === Cadastros realizados! ===
+
 ==========================
 === Catálogo de Mídias ===
 ==========================
@@ -37,8 +39,9 @@ Opção:
 Cantor{nome=Fulana, tempoCarreira=4}
 Banda{nome=Beltrano e seus amigos, numIntegrantes=7}
 Cd{nome=Cd da Fulana, preco=15.0, numFaixas=18}
-Dvd{nome=Dvd do Beltrano, preco=30.0numDuracao=39}
+Dvd{nome=Dvd do Beltrano, preco=30.0, numDuracao=39}
 === Consultas realizadas! ===
+
 ==========================
 === Catálogo de Mídias ===
 ==========================
@@ -57,10 +60,11 @@ Posição: 2
 Nome: Cd do Ciclano e seus amigos
 Posição: 3
 Nome: Dvd do Beltrano
-Posição: 1
+Posição: 4
 Nome: Dvd da Fulana e suas amigas
-Posição: 2
+Posição: 5
 === Consultas realizadas! ===
+
 ==========================
 === Catálogo de Mídias ===
 ==========================
@@ -74,11 +78,12 @@ Posição: 2
 Opção: 
 4
 === Excluindo... ===
-Cantor "Fulana" excluído!
-Cantor "Beltrano e seus amigos" excluído!
-Cd "Cd da Fulana" excluído!
-Dvd "Dvd do Beltrano" excluído!
+Artista "Fulana" excluído!
+Banda "Beltrano e seus amigos" excluído!
+Mídia "Cd da Fulana" excluído!
+Mídia "Dvd do Beltrano" excluído!
 === Exclusões realizadas! ===
+
 ==========================
 === Catálogo de Mídias ===
 ==========================
@@ -103,14 +108,13 @@ Banda{nome=Fulano e seus amigos, numIntegrantes=4}
 Banda{nome=Ciclano e seus amigos, numIntegrantes=5}
 Banda{nome=Fulana e suas amigas, numIntegrantes=10}
 
-	CDs
+	Mídias
 Cd{nome=Cd do Fulano, preco=10.0, numFaixas=13}
 Cd{nome=Cd do Ciclano e seus amigos, preco=8.0, numFaixas=9}
-
-	DVDs
-Dvd{nome=Dvd da Fulana e suas amigas, preco=35.0numDuracao=54}
-Dvd{nome=Dvd do Ciclano, preco=28.0numDuracao=27}
+Dvd{nome=Dvd da Fulana e suas amigas, preco=35.0, numDuracao=54}
+Dvd{nome=Dvd do Ciclano, preco=28.0, numDuracao=27}
 === Listagem realizada! ===
+
 ==========================
 === Catálogo de Mídias ===
 ==========================
@@ -128,6 +132,6 @@ Obrigado e até logo!!!
 ------------------------------------------------------------------------
 BUILD SUCCESS
 ------------------------------------------------------------------------
-Total time:  30.004 s
-Finished at: 2022-06-08T19:56:23-03:00
+Total time:  8.924 s
+Finished at: 2022-06-12T17:50:37-03:00
 ------------------------------------------------------------------------
