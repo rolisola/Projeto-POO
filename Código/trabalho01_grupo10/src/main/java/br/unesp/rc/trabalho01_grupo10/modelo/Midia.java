@@ -54,4 +54,15 @@ public class Midia {
     public String toString() {
         return "nome=" + nome + ", preco=" + preco;
     }
+    
+    @Override
+    public boolean equals(Object o) {
+        boolean result = false;
+        
+        if (this.getCodBarras() == ((Midia)o).getCodBarras()) {
+            result = true;
+        }
+        
+        return result;
+    }
 }

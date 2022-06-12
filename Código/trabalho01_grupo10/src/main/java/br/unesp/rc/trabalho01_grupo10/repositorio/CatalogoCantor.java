@@ -20,7 +20,7 @@ public class CatalogoCantor {
     public static void cadastrar(Cantor cantor){
         for(Cantor c : catalogoCantor) {
             if(c.getNome().equals(cantor.getNome())) {
-                System.out.println("Cantor \"" + c.getNome() + "\" já existente!");
+                System.out.println("Artista \"" + c.getNome() + "\" já existe!");
                 igual = 1;
                 break;
             }
@@ -29,6 +29,7 @@ public class CatalogoCantor {
         if(igual == 0) {
             catalogoCantor.add(cantor);
         }
+        
         igual = 0;
     }
     
@@ -36,8 +37,16 @@ public class CatalogoCantor {
         for(Cantor c : catalogoCantor) {
             if(c.getNome().equals(nome)) {
                 System.out.println(c);
+                igual = 1;
+                break;
             }
         }
+        
+        if(igual == 0) {
+            System.out.println("Artista \"" + nome + "\" não encontrado!");
+        }
+        
+        igual = 0;
     }
     
     public static void excluir(String nome) {
@@ -48,9 +57,17 @@ public class CatalogoCantor {
             
             if(cantorAux.getNome().equals(nome)) {
                 iteratorCantor.remove();
-                System.out.println("Cantor \"" + nome + "\" excluído!");
+                System.out.println("Artista \"" + nome + "\" excluído!");
+                igual = 1;
+                break;
             }
         }
+        
+        if(igual == 0) {
+            System.out.println("Artista \"" + nome + "\" não encontrado!");
+        }
+        
+        igual = 0;
     }
     
     public static void listar() {

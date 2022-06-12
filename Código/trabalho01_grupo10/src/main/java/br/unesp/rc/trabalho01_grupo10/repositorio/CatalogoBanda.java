@@ -21,7 +21,7 @@ public class CatalogoBanda {
     public static void cadastrar(Banda banda){
         for(Banda b : catalogoBanda) {
             if(b.getNome().equals(banda.getNome())) {
-                System.out.println("Banda \"" + b.getNome() + "\" já existente!");
+                System.out.println("Banda \"" + b.getNome() + "\" já existe!");
                 igual = 1;
                 break;
             }
@@ -30,6 +30,7 @@ public class CatalogoBanda {
         if(igual == 0) {
             catalogoBanda.add(banda);
         }
+        
         igual = 0;
     }
     
@@ -37,8 +38,16 @@ public class CatalogoBanda {
         for(Banda b : catalogoBanda) {
             if(b.getNome().equals(nome)) {
                 System.out.println(b);
+                igual = 1;
+                break;
             }
         }
+        
+        if(igual == 0) {
+            System.out.println("Banda \"" + nome + "\" não encontrado!");
+        }
+        
+        igual = 0;
     }
     
     public static void excluir(String nome) {
@@ -49,9 +58,17 @@ public class CatalogoBanda {
             
             if(bandaAux.getNome().equals(nome)) {
                 iteratorBanda.remove();
-                System.out.println("Cantor \"" + nome + "\" excluído!");
+                System.out.println("Banda \"" + nome + "\" excluído!");
+                igual = 1;
+                break;
             }
         }
+        
+        if(igual == 0) {
+            System.out.println("Banda \"" + nome + "\" não encontrado!");
+        }
+        
+        igual = 0;
     }
     
     public static void listar() {

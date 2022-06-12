@@ -23,6 +23,6 @@ public class Dvd extends Midia {
 
     @Override
     public String toString() {
-        return "Dvd{" + super.toString() + "numDuracao=" + numDuracao + '}';
+        return "Dvd{" + super.toString() + ", numDuracao=" + numDuracao + '}';
     }
 }
